@@ -12,25 +12,29 @@ function onReady() {
 
     let checkbox = document.createElement('input');
 
+    let del = document.createElement('button');
+
+
     checkbox.type = "checkbox";
 
     newLi.textContent = title;
 
     newLi.appendChild(checkbox);
 
+    del.innerHTML = "delete";
+
+    newLi.appendChild(del);
+
+    del.addEventListener("click", function (e) {
+
+      this.parentNode.parentNode.removeChild(this.parentNode);
+
+            });
+
     toDoList.appendChild(newLi);
 
     newToDoText.value = '';
-
-    removeTask.addEventListener('click', function(e) {
-
-      newLi.parentnewLi.removeChild(newLi);
-
-     });
-
   });
-
-
 }
 
 window.onload = function() {
