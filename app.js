@@ -22,7 +22,15 @@ function onReady() {
 
     newToDoText.value = '';
 
+    removeTask.addEventListener('click', function(e) {
+
+      newLi.parentnewLi.removeChild(newLi);
+
+     });
+
   });
+
+
 }
 
 window.onload = function() {
