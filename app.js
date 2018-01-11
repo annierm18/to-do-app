@@ -27,7 +27,7 @@ function onReady() {
 
     del.addEventListener("click", function (e) {
 
-      this.parentNode.parentNode.removeChild(this.parentNode);
+      newLi.remove();
 
             });
 
